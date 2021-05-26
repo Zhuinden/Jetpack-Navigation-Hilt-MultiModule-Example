@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_splash"
+    app:startDestination="@id/splash_fragment">
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.zhuinden.jetpacknavmultimodule.feature_splash.SplashFragment"
+        tools:layout="@layout/splash_fragment" />
+</navigation>
