@@ -2,6 +2,7 @@ package com.zhuinden.jetpacknavmultimodule.feature_main
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.zhuinden.jetpacknavmultimodule.feature_main.databinding.MainFragmentBinding
@@ -15,6 +16,7 @@ class MainFragment: Fragment(R.layout.main_fragment) {
         super.onViewCreated(view, savedInstanceState)
 
         val binding = MainFragmentBinding.bind(view)
-        // ...
+
+        Toast.makeText(requireActivity(), "Arg: ${args.someArgument}", Toast.LENGTH_LONG).show()
     }
 }
